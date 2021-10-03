@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import TaskOne from "./components/task1/index.js";
+import TaskTwo from "./components/task2/index.js";
+import TaskThree from "./components/task3/index.js";
+import TaskFour from "./components/task4/index.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <TaskOne
+        nameFilm="The Matrix"
+        nameProducer="Wachowski brothers"
+        year="1999"
+        company="Warner Bros."
+      />
+      <TaskTwo
+        name="Maxim"
+        surname="Vikharev"
+        year="1990"
+        city="Kiev"
+        email="bixapb@gmail.com"
+      />
+      <TaskThree />
+      <TaskFour animal="Cat" name="Joe" />
+    </>
   );
 }
 
